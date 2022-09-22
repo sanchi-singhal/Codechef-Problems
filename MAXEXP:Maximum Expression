@@ -1,0 +1,45 @@
+MAXEXP:Maximum Expression
+
+
+https://www.codechef.com/START57D/problems/MAXEXP
+
+
+# cook your dish here
+t=int(input())
+for i in range(t):
+    n=int(input())
+    s=input()
+    l1=[]
+    l=[]
+    p=0
+    m=0
+    ss=""
+    for i in s:
+        if(i!="+" and i!="-"):
+            l1.append(int(i))
+        elif(i=="+"):
+            p=p+1
+        else:
+            m=m+1
+    l1.sort()
+    # print(l1,"hi")
+    i=0
+    while(m>=0):
+        l.append(l1[i])
+        if(m!=0):
+            l.append("-")
+        i=i+1
+        m=m-1
+    while(p>0):
+        l.append("+")
+        l.append(l1[i])
+        i=i+1
+        p=p-1
+    # print(i)
+    while(i<=len(l1)-1):
+        l.append(l1[i])
+        i=i+1
+    l3=l[::-1]
+    for i in l3:
+        ss=ss+str(i)
+    print(ss)
