@@ -1,0 +1,22 @@
+TWODIFFPALIN:Two Different Palindromes
+
+
+
+
+
+https://www.codechef.com/START57D/problems/TWODIFFPALIN
+
+
+
+t=int(input())
+for i in range(t):
+    a,b=map(int,input().split())
+    if(a==1 or b==1):
+        print("NO")
+    else:
+        if(a%2==0 and b%2==0):
+            print("YES")
+        elif(a%2!=0 and b%2!=0):
+            print("NO")
+        elif(a%2==0 or b%2==0):
+            print("YES")
