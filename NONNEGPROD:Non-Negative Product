@@ -1,0 +1,21 @@
+NONNEGPROD:Non-Negative Product
+
+
+
+https://www.codechef.com/START57D/problems/NONNEGPROD
+
+
+# cook your dish here
+t=int(input())
+for i in range(t):
+    n=int(input())
+    l=list(map(int,input().split()))
+    g=0
+    if (0 in l):
+        print("0")
+    else:
+        for i in l:
+            if(i<0):
+                g=g+1
+        # print(g,"hi")
+        print(g%2)
