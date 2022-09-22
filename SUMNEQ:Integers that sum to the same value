@@ -1,0 +1,12 @@
+SUMNEQ:Integers that sum to the same value
+
+
+https://www.codechef.com/START57D/problems/SUMNEQ
+
+
+# cook your dish here
+n=int(input())
+if(n%2!=0):
+    print(2*(n//2))
+else:
+    print((2*(n//2))-1)
