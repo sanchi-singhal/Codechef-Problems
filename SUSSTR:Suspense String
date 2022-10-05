@@ -1,0 +1,32 @@
+SUSSTR:Suspense String
+
+
+https://www.codechef.com/START59C/problems/SUSSTR
+
+
+# cook your dish here
+t=int(input())
+for i in range(t):
+    n=int(input())
+    s=input()
+    t=""
+    while(len(s)>0):
+        a=s[0]
+        s1=s[1::]
+        s=s1
+        if(a=="1"):
+            t=t+a
+        else:
+            t=a+t
+        if(len(s)==0):
+            break
+        else:
+            b=s[-1]
+            s2=s[::-1]
+            s3=s2[1::]
+            s=s3[::-1]
+        if(b=="0"):
+            t=t+b
+        else:
+            t=b+t
+    print(t)
