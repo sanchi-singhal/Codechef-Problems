@@ -1,0 +1,21 @@
+HAPPYSTR:Chef and Happy String
+
+
+https://www.codechef.com/START59C/problems/HAPPYSTR
+
+
+
+# cook your dish here
+t=int(input())
+for i in range(t):
+    s=input()
+    l=["a","e","i","o","u"]
+    for i in range(len(s)-2):
+        sum=0
+        if(s[i] in l and s[i+1] in l and s[i+2] in l):
+            sum=1
+            break
+    if(sum==1):
+        print("Happy")
+    else:
+        print("Sad")
