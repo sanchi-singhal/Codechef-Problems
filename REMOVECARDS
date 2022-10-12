@@ -1,0 +1,15 @@
+REMOVECARDS
+
+https://www.codechef.com/START60D/problems/REMOVECARDS
+
+
+# cook your dish here
+t=int(input())
+for i in range(t):
+    n=int(input())
+    l=list(map(int,input().split()))
+    j=[]
+    for i in l:
+        j.append(l.count(i))
+    m=max(j)
+    print(len(l)-m)
