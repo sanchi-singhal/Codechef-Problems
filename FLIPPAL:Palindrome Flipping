@@ -1,0 +1,22 @@
+FLIPPAL:Palindrome Flipping
+
+
+
+https://www.codechef.com/START60D/problems/FLIPPAL
+
+
+
+# cook your dish here
+t=int(input())
+for i in range(t):
+    n=int(input())
+    s=input()
+    # print(s[::-1])
+    if(s==s[::-1]):
+        print('YES')
+    elif(len(s)==2):
+        print("NO")
+    elif(s.count("1")%2==0 or s.count("0")%2==0):
+        print("YES")
+    else:
+        print("NO")
