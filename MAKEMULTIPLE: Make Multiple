@@ -1,0 +1,23 @@
+
+MAKEMULTIPLE: Make Multiple
+
+
+https://www.codechef.com/START62D/problems/MAKEMULTIPLE
+
+
+# cook your dish here
+import math
+t=int(input())
+for i in range(t):
+    a,b=map(int,input().split())
+    if(b>=a):
+        if(b%a==0):
+            print('YES')
+        else:
+            if(b>=2*a):
+                print("YES")
+            else:
+                print("NO")
+    else:
+        print("NO")
+            
