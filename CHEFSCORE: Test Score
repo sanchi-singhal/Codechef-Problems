@@ -1,0 +1,18 @@
+CHEFSCORE:Test Score
+
+https://www.codechef.com/START62D/problems/CHEFSCORE
+
+
+# cook your dish here
+t=int(input())
+for i in range(t):
+    sum=0
+    a=1
+    n,x,y=map(int,input().split())
+    while(sum<y and n>0):
+        sum=sum+x
+        n=n-1
+    if(sum!=y):
+        print("NO")
+    else:
+        print("YES")
