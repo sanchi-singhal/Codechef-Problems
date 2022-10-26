@@ -1,0 +1,12 @@
+XJUMP: X Jumps
+
+https://www.codechef.com/START62D/problems/XJUMP
+
+
+# cook your dish here
+t=int(input())
+for i in range(t):
+    x,y=map(int,input().split())
+    a=x//y
+    b=x%y
+    print(a+b)
