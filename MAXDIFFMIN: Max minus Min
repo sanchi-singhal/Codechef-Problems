@@ -1,0 +1,11 @@
+MAXDIFFMIN: Max minus Min
+
+
+https://www.codechef.com/START62D/problems/MAXDIFFMIN
+
+
+# cook your dish here
+t=int(input())
+for i in range(t):
+    a,b,c=map(int,input().split())
+    print(max(a,b,c)-min(a,b,c))
