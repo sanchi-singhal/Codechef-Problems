@@ -1,0 +1,30 @@
+FINALSUM: Final Sum
+
+
+https://www.codechef.com/START62D/problems/FINALSUM
+
+
+
+OPTIMIZED
+
+
+
+
+TLE
+
+# cook your dish here
+t=int(input())
+for i in range(t):
+    n,q=map(int,input().split())
+    l=list(map(int,input().split()))
+    for k in range(q):
+        a,b=map(int,input().split())
+        # print(l[a-1],l[b-1])
+        for z in range(a-1,b):
+            c=(a-1)%2
+            if(z%2==c):
+                l[z]+=1 
+            else:
+                l[z]-=1 
+            # print(l)
+    print(sum(l))
