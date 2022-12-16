@@ -1,0 +1,15 @@
+Rating Improvement
+
+
+https://www.codechef.com/problems/ADVANCE
+
+
+
+# cook your dish here
+t=int(input())
+for i in range(t):
+    x,y=map(int,input().split())
+    if(y>=x and y<=x+200):
+        print("yes")
+    else:
+        print("NO")
