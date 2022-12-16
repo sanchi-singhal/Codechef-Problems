@@ -1,0 +1,16 @@
+The Cheaper Cab
+
+
+https://www.codechef.com/problems/CABS
+
+
+# cook your dish here
+t=int(input())
+for i in range(t):
+    x,y=map(int,input().split())
+    if(x<y):
+        print("FIRST")
+    elif(y<x):
+        print("Second")
+    else:
+        print("any")
