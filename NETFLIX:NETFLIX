@@ -1,0 +1,15 @@
+NETFLIX:NETFLIX
+
+
+https://www.codechef.com/COOK144D/problems/NETFLIX
+
+
+
+# cook your dish here
+t=int(input())
+for i in range(t):
+    a,b,c,x=map(int,input().split())
+    if(a+b>=x or b+c>=x or a+c>=x):
+        print("YES")
+    else:
+        print("NO")
