@@ -1,0 +1,17 @@
+RUNCOMPARE: Running Comparison
+
+
+https://www.codechef.com/START80D/problems/RUNCOMPARE
+
+
+# cook your dish here
+t=int(input())
+for i in range(t):
+    n=int(input())
+    a=list(map(int,input().split()))
+    b=list(map(int,input().split()))
+    c=0
+    for i in range(n):
+        if(b[i]<=2*a[i] and a[i]<=2*b[i]):
+            c=c+1
+    print(c)
