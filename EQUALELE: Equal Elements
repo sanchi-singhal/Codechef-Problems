@@ -1,0 +1,15 @@
+EQUALELE: Equal Elements
+
+
+https://www.codechef.com/START80D/problems/EQUALELE
+
+
+# cook your dish here
+from statistics import mode
+t=int(input())
+for i in range(t):
+    n=int(input())
+    l=list(map(int,input().split()))
+    m=mode(l)
+    s=l.count(m)
+    print(n-s)
