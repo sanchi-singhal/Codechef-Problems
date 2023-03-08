@@ -1,0 +1,18 @@
+SINGLEUSE: Single-use Attack
+
+
+https://www.codechef.com/START80D/problems/SINGLEUSE
+
+
+
+# cook your dish here
+t=int(input())
+for i in range(t):
+    h,x,y=map(int,input().split())
+    c=0
+    h=h-y
+    c=1
+    while(h>0):
+        h=h-x
+        c=c+1
+    print(c)
