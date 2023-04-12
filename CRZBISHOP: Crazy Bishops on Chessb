@@ -1,0 +1,23 @@
+CRZBISHOP: Crazy Bishops on Chessb
+
+https://www.codechef.com/START85D/problems/CRZBISHOP
+
+
+# cook your dish here
+t=int(input())
+for i in range(t):
+    n=int(input())
+    if(n==1 or n==2):
+        print("0")
+    # elif(n==3):
+    #     print("2")
+    # elif(n==4):
+    #     print("3")
+    else:
+        t=n-3
+        c=t//2
+        q=t-c
+        s=c*2+q
+        
+        print(s+2)
+        
