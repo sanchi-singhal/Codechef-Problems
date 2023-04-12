@@ -1,0 +1,31 @@
+GCD_QUERIES: GCD Queries
+
+
+https://www.codechef.com/START85D/problems/GCD_QUERIES
+
+
+
+TLE:
+
+# cook your dish here
+from math import gcd
+from cmath import inf
+t=int(input())
+for i in range(t):
+    n=int(input())
+    l=list(map(int,input().split()))
+    q=int(input())
+    ql=list(map(int,input().split()))
+    # s=l.copy()
+    for k in ql:
+        s=l.copy()
+        while(s!=[]):
+            j=min(s)
+            s.remove(j)
+            if(gcd(k,j)>1):
+                print(j,end=" ")
+                l.remove(j)
+                break
+        else:
+            print(min(l),end=" ")
+            l.remove(min(l))
