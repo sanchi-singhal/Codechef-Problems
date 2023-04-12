@@ -1,0 +1,21 @@
+INSTDUM: Inside The Stadium
+
+
+https://www.codechef.com/START85D/problems/INSTDUM
+
+
+# cook your dish here
+t=int(input())
+for i in range(t):
+    n=int(input())
+    l=list(map(int,input().split()))
+    c=0
+    s=0
+    for i in range(len(l)):
+        s=s+l[i]
+        # if(s>len(l)):
+            # break
+        if(s==i+1):
+            c=c+1
+    print(c)
+    # print()
