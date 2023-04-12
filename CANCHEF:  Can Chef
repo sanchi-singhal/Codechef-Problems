@@ -1,0 +1,13 @@
+CANCHEF: Can Chef
+
+https://www.codechef.com/START85D/problems/CANCHEF
+
+
+# cook your dish here
+t=int(input())
+for i in range(t):
+    x,y=map(int,input().split())
+    if(15*x>=2*y):
+        print("YES")
+    else:
+        print("NO")
