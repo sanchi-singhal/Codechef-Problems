@@ -1,0 +1,12 @@
+EPANLNK: Efficient PAN Linking
+
+
+https://www.codechef.com/START85D/problems/EPANLNK
+
+
+
+# cook your dish here
+t=int(input())
+for i in range(t):
+    n=int(input())
+    print(n%20)
