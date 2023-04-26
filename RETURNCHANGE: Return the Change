@@ -1,0 +1,17 @@
+RETURNCHANGE: Return the Change
+
+
+https://www.codechef.com/START87C/problems/RETURNCHANGE
+
+
+
+# cook your dish here
+t=int(input())
+for i in range(t):
+    x=int(input())
+    y=x%10
+    if(y<5):
+        x=x-y
+    else:
+        x=x-y+10
+    print(100-x)
