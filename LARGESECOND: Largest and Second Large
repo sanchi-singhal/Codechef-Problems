@@ -1,0 +1,16 @@
+LARGESECOND: Largest and Second Large
+
+
+https://www.codechef.com/START88C/problems/LARGESECOND
+
+
+# cook your dish here
+t=int(input())
+for i in range(t):
+    n=int(input())
+    l=list(map(int,input().split()))
+    a=max(l)
+    while(a in l):
+        l.remove(a)
+    b=max(l)
+    print(a+b)
