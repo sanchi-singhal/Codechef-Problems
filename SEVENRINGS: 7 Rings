@@ -1,0 +1,17 @@
+SEVENRINGS: 7 Rings
+
+
+https://www.codechef.com/START93C/problems/SEVENRINGS
+
+
+
+# cook your dish here
+t=int(input())
+for i in range(t):
+    n,x=map(int,input().split())
+    ans=n*x
+    st=str(ans)
+    if(len(st)==5and st[0]!="0"):
+        print("YES")
+    else:
+        print("NO")
