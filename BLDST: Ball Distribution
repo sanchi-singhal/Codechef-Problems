@@ -1,0 +1,30 @@
+BLDST: Ball Distribution
+
+
+https://www.codechef.com/START98C/problems/BLDST
+
+
+TLE
+
+# cook your dish here
+t=int(input())
+for i in range(t):
+    n,m=map(int,input().split())
+    a=list(map(int,input().split()))
+    if(len(a)<m):
+        print("0")
+    else:
+        l=[0]*n
+        j=0
+        for i in range(len(a)):
+            if(j==len(l)):
+                j=0
+            while(a[i]):
+                if(j==len(l)):
+                    j=0
+                l[j]=l[j]+1
+                a[i]=a[i]-1
+                j=j+1
+        print(l.count(m))
+
+
