@@ -1,0 +1,22 @@
+FINDK3: FIND A and B
+
+https://www.codechef.com/START98C/problems/FINDK3
+
+# cook your dish here
+t=int(input())
+for i in range(t):
+    x,y,z=map(int,input().split())
+    if((x*y)%z==0):
+        a=x*y
+        b=z
+        print(a,b,sep=" ")
+    elif((z*y)%x==0):
+        a=z*y
+        b=x
+        print(a,b,sep=" ")
+    elif((z*x)%y==0):
+        a=z*x
+        b=y
+        print(a,b,sep=" ")
+    else:
+        print("-1")
