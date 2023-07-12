@@ -1,0 +1,18 @@
+AIRM: Airport Management
+
+https://www.codechef.com/START98C/problems/AIRM
+
+# cook your dish here
+from statistics import mode
+t=int(input())
+for i in range(t):
+    n=int(input())
+    a=list(map(int,input().split()))
+    b=list(map(int,input().split()))
+    c=a+b
+    d=set(c)
+    if(len(c)==len(d)):
+        print("1")
+    else:
+        h=mode(c)
+        print(c.count(h))
